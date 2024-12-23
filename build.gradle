@@ -3,15 +3,13 @@ plugins {
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
-    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.8.1")
-    testImplementation("org.junit.jupiter:junit-jupiter-params:5.8.1")
-    testImplementation("org.junit.platform:junit-platform-suite:1.8.1")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
 }
-test {
+
+tasks.named('test') {
     useJUnitPlatform()
 }

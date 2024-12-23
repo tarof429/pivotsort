@@ -16,9 +16,16 @@ Consider the set {64, 25, 12, 22, 11}.
 * Next we consider 12 with 22, but don't swap them since 12 < 22.
 * Then we move onto the odd number of elements int the set and perform the same comparison and swaps as needed.
 
+## Usage
+
+```sh
+gradle clean
+gradle -i test
+```
+
 ## Sample output
 
-```
+```sh
 Starting sort for 64 25 12 22 11
 Outer loop: 0
   In first inner loop.
